@@ -14,4 +14,13 @@ Usando um middleware:
 app.use(path, middlewareFunction);
 ```
 
-- Path: Parâmetro opcional, caso não seja passado, será executado em todas as solicitações. 
+- Path: Parâmetro opcional, caso não seja passado, será executado em todas as solicitações.
+
+## Arquivo .env
+
+Arquivo `.env` é um arquivo oculto usado para passar variáveis ambientes para o aplicativo.
+
+geralmente utilizado para manter informações ocultas, como chaves da API ou URL do banco de dados ou arquivos de configuração.
+
+> As variáveis de ambiente podem ser acessadas pelo aplicativo usando `process.env.VAR_NAME`. O objeto process.env é um objeto global do Node e suas variáveis são passadas como strings. Por convenção, os nomes de variáveis ficam todos em letras maiúsculas, com palavras separadas por um sublinhado. Também é importante notar que não pode haver espaço em torno do sinal de igual quando você estiver atribuindo valores às suas variáveis, como, por exemplo, VAR_NAME=value
+
